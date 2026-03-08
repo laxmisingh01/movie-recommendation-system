@@ -90,7 +90,7 @@ def recommend(movie):
 if os.path.exists("similarity.pkl") and os.path.getsize("similarity.pkl") < 1000000:
     os.remove("similarity.pkl")
 
-if not os.path.exists("similarity.pkl")    
+if not os.path.exists("similarity.pkl"):   
     url = "https://drive.google.com/file/d/1J2c9Zk-yVro6rWpbg6Hqg1ezrG2EVoq1"
     gdown.download(url, "similarity.pkl", fuzzy=True)
 
